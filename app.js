@@ -8,14 +8,17 @@ const generator = require('./generator.js');
 
 app.get('/', (req, res) => {
 
-    let randomobjet = generator.Generator(10)
-    console.log(randomobjet)
+
+    let randomobjet = generator.generatorOneObject(2)
+    let multipleobject = generator.generatorMultipleObjetct(4,3)
+
+
     let htmlResponse ='<ol>';
-    for (let i = 0; i < Object.keys(randomobjet).length; i++) {
-    let key = Object.keys(randomobjet)[i]
-    htmlResponse += `<li>${key}:'${randomobjet[key]}'</li>`
-    }
-    htmlResponse += '</ol>'
+    // for (let i = 0; i < Object.keys(randomobjet).length; i++) {
+    // let key = Object.keys(randomobjet)[i]
+    // htmlResponse += `<li>${key}:'${randomobjet[key]}'</li>`
+    // }
+    // htmlResponse += '</ol>'
     res.send(htmlResponse)
 })
 
