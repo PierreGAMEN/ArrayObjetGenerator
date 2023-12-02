@@ -1,7 +1,7 @@
 
 const objet = {
 
-valeurs: [
+values: [
 'biberonner',
 'potentiel',
 'cacher',
@@ -24,7 +24,7 @@ valeurs: [
 'quartier',
 ],
 
- clés: [
+ keys: [
 'moto',
 'baignoire',
 'funiculaire',

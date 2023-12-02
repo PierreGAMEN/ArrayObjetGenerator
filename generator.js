@@ -6,8 +6,8 @@ const arrayGenerator = {
     generatorOneObject: (NbKeyPerObject) => {
         let obj = {};
         for(let i = 0; i < NbKeyPerObject; i++) {
-            let newKey = data.clés[arrayGenerator.randomValue(data.clés)];
-            obj[newKey] = data.valeurs[arrayGenerator.randomValue(data.valeurs)];
+            let newKey = data.keys[arrayGenerator.randomValue(data.keys)];
+            obj[newKey] = data.values[arrayGenerator.randomValue(data.values)];
         }
         console.log(obj);
     },
@@ -23,15 +23,15 @@ const arrayGenerator = {
             let obj = {};
     
             for (let i = 0; i < NbKeyPerObject; i++) {
-                let newKey = data.clés[arrayGenerator.randomValue(data.clés)];
-                obj[newKey] = data.valeurs[arrayGenerator.randomValue(data.valeurs)];
+                let newKey = data.keys[arrayGenerator.randomValue(data.keys)];
+                obj[newKey] = data.values[arrayGenerator.randomValue(data.values)];
             }
     
             result.push(obj); 
         }
     
         console.log(result); 
-    }
+    },
 
     
     }
