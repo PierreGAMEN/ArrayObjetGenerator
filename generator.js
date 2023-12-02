@@ -9,7 +9,7 @@ const arrayGenerator = {
             let newKey = data.keys[arrayGenerator.randomValue(data.keys)];
             obj[newKey] = data.values[arrayGenerator.randomValue(data.values)];
         }
-        console.log(obj);
+        return(obj);
     },
     
     randomValue: (arrayValue) => {
@@ -30,8 +30,19 @@ const arrayGenerator = {
             result.push(obj); 
         }
     
-        console.log(result); 
+        return(result); 
     },
+
+    randomElementInArray: (numberOfElement) => {
+        let array = [];
+        for (let i = 0; i < numberOfElement; i++) {
+            let element = data.values[arrayGenerator.randomValue(data.values)]
+            array.push(element)
+        }
+        return array
+    },
+
+
 
     
     }

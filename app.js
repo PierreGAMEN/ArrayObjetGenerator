@@ -8,8 +8,19 @@ const generator = require('./generator.js');
 
 app.get('/', (req, res) => {
 
-    // let randomobjet = generator.generatorOneObject(2)
-    generator.generatorMultipleObjetct(5,2)
+    let randomobjet = generator.generatorOneObject(2)
+    let multipleObjet = generator.generatorMultipleObjetct(2,2)
+    let simpleArray = generator.randomElementInArray(4)
+
+    console.log(randomobjet)
+    console.log(multipleObjet)
+    console.log(simpleArray)
+
+    let newKey = 'name';
+    randomobjet[newKey] = 'Pierre'
+
+    console.log(randomobjet)
+
     res.send('')
 })
 
