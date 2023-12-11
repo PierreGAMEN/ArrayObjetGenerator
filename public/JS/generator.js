@@ -1,5 +1,5 @@
 
-const data = require('./data.js');
+const data = require('../../data/data.js');
 
 const arrayGenerator = {
 
@@ -16,7 +16,7 @@ const arrayGenerator = {
         return Math.floor(Math.random() * arrayValue.length);
     }, 
 
-    generatorMultipleObjetct: (NbObject, NbKeyPerObject) => {
+    generatorMultipleObject: (NbObject, NbKeyPerObject) => {
         let result = []; 
     
         for (let j = 0; j < NbObject; j++) {
